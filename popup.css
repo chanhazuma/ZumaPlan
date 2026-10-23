@@ -1,0 +1,147 @@
+.popup{
+  width: 95dvw;
+  height: 65dvh;
+  position: fixed;
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1.8px solid #B9D8FF;
+  border-radius: 12px;
+  background-color: #B9D8FF50;
+  backdrop-filter: blur(4px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 8px 5px;
+}
+.popupBg{
+  width: 100dvw;
+  height: 100dvh;
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  background-color: #00000050;
+}
+
+/* =======================  POPUP SALDO  ======================= */
+.popupSaldo{
+  display: grid;
+  gap: 5px;
+  grid-template-columns: 1fr 1fr;
+  align-content: start;
+}
+.popupSaldo>div{
+  width: 100%;
+  height: 55px;
+  display: flex;
+  flex-direction: column;
+  padding: 3px 5px;
+  gap: 3px;
+  background-color: #E2F0D950;
+  border: 1px solid #E2F0D9;
+  border-radius: 8px;
+  color: white;
+}
+.popupSaldo>div>h1{
+  font-size: small;
+}
+.popupSaldo>div>h2{
+  font-size: large;
+}
+
+/* =======================  POPUP SALDO  ======================= */
+.popupKategori{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 5px;
+}
+.popupKategori>div{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3px 5px;
+  gap: 5px;
+  background-color: #E2F0D950;
+  border: 1px solid #E2F0D9;
+  border-radius: 8px;
+  color: white;
+}
+.popupKategori>div>h1{
+  font-size: large;
+  text-align: center;
+  justify-self: flex-start;
+}
+.popupKategori>div>h2{
+  font-size: x-large;
+  color: #FFC5DD;
+}
+
+/* =======================  POPUP REGIST  ======================= */
+.popupRegist{
+  background-color: #FFC5DD50;
+  border: 1.8px solid #FFC5DD;
+}
+.popupRegist>header{
+  width: 100%;
+  height: 25%;
+}
+.popupRegist>form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.popupRegist>form>label{
+  font-weight: bold;
+  font-size: large;
+  letter-spacing: 1.2px;
+}
+.popupRegist>form>input{
+  height: 25px;
+  width: 180px;
+  border-radius: 8px;
+  border: 1px solid #FFF;
+  background: #FFFFFF50;
+  text-align: center;
+}
+.popupRegist>form>button{
+  padding:0 8px;
+  height: 25px;
+  font-size: small;
+  background-color: #FFFFFF50;
+  border: 1px solid #FFF;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.popupRegist>form>button>img{
+  aspect-ratio: 1/1;
+  height: 85%;
+}
+
+/* =======================  POPUP NOTIF  ======================= */
+.popupNotif{
+  height: auto;
+  max-height: 65dvh;
+}
+.popupNotif>header{
+  width: 100%;
+  margin-bottom: 15px;
+  border-bottom: 1px solid;
+}
+.popupNotif>section{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+.popupNotif>section>h1{
+  grid-column: 1/3;
+  font-size: large;
+}

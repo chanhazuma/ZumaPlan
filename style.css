@@ -1,0 +1,448 @@
+@font-face {
+    font-family: zumaFont;
+    src: url("fonts/Cause-VariableFont_wght.ttf");
+}
+*{
+    font-family: "zumaFont";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hidden{
+    display: none!important;
+}
+.none{
+    display: none!important;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100dvw;
+    height: 65px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FFF;
+    box-shadow: 0 0 5px #00000025;
+}
+footer>h1{
+    font-size: small;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer>h1>img{
+    aspect-ratio: 1/1;
+    height: 35px;
+}
+.footerClicked{
+  color: violet;
+  border-bottom: 1.8px solid violet
+}
+.page{
+  padding-bottom: 68px;
+}
+
+/* ============================  HOME PAGE  ============================ */
+/* HEADER */
+.homePage{
+    height: 100dvh;
+    width: 100dvw;
+    overflow-y: auto;
+}
+.homePage>header{
+    width: 100dvw;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 6px #00000025;
+    position: sticky;
+    top: 0;
+    background-color: #FFF;
+    z-index: 99;
+}
+.homePage>header>.logo1{
+    width: 50%;
+}
+#btnHomeHeader{
+    aspect-ratio: 1/1;
+    height: 70%;
+    position: absolute;
+    right: 15px;
+}
+
+/* USER CARD */
+.homeUserCard{
+    width: 100%;
+    padding: 12px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: #B9D8FF;
+}
+#homeUserName{
+    font-size: x-large;
+}
+.homeUserCard>h2{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* USER REKAP */
+.homeUserRekap{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 35px 1fr 1fr;
+    gap: 10px;
+    justify-items: center;
+    padding: 0 5px;
+}
+.homeUserRekap>h1{
+    padding: 3px 5px;
+    font-size: large;
+    grid-column: 1/3;
+    align-self: center;
+    justify-self: left;
+    background-image: linear-gradient(to right, #FFC5DD, #FFFFFF00);
+}
+.homeUserRekap>div{
+    aspect-ratio: 2.2/1;
+    width: 100%;
+    background-color: #FFC5DD50;
+    border: 1.8px solid #FFC5DD;
+    border-radius: 16px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#homeTotalTransaksi{
+    background-color: #B9D8FF50;
+    border: 1.8px solid #B9D8FF;
+}
+#homeAveragePengeluaran{
+    background-color: #C7B9F550;
+    border: 1.8px solid #C7B9F5;
+}
+#homeLabelPengeluaran{
+    background-color: #E2F0D950;
+    border: 1.8px solid #E2F0D9;
+    position: relative;
+}
+#homeLabelPengeluaran>span{
+    position: absolute;
+    bottom: 5px;
+    font-size: small;
+    font-style: italic;
+    color: blue;
+    text-decoration: underline;
+}
+.homeUserRekap>div>h1{
+    font-size: large;
+    position: absolute;
+    top: 5px;
+}
+.homeUserRekap>div>h2{
+    font-size: xx-large;
+}
+
+/* RIWAYAT TRANSAKSI */
+.homeRiwayatTransaksi{
+    width: 100dvw;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+.homeRiwayatTransaksi>h1{
+    font-size: large;
+    margin: 8px;
+    position: sticky;
+    top: 10%;
+    background-color: #FFF;
+    z-index: 98;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 3px;
+    padding: 8px 5px;
+}
+.homeRiwayatTransaksi>h1>label{
+    font-size: small;
+    text-align: center;
+    color: #757575;
+}
+.homeRiwayatTransaksi>h1>span{
+    grid-column: 1/3;
+    justify-self: center;
+}
+.riwayatTransaksi{
+    width: 100%;
+    border-radius: 8px;
+    padding: 8px 18px;
+    box-shadow: 0 0 5px #00000025;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.riwayatTransaksi>h1{
+    font-size: x-large;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rout{
+    color: red;
+}
+.rin{
+    color: lightgreen;
+}
+.rp{
+    color: #C7B9F5;
+}
+.riwayatTransaksi>h2{
+    font-size: small;
+}
+.riwayatTransaksi>span{
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    font-size: x-small;
+}
+
+/* ============================  PINDAH PAGE  ============================ */
+
+/* HEADER */
+.pindahPage, .outPage, .inPage, .addPage{
+    width: 100dvw;
+    height: 100dvh;
+    overflow-y: auto;
+}
+.pindahPage>header,.outPage>header, .inPage>header, .addPage>header{
+    width: 100%;
+    padding: 8px 12px;
+    box-shadow: 0 0 5px #00000025;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.pindahPage>header>h1,.outPage>header>h1, .inPage>header>h1, .addPage>header>h1{
+    font-size: x-large;
+    font-weight: bold;
+    color: #757575;
+}
+.pindahPage>header>h2,.outPage>header>h2, .inPage>header>h2, .addPage>header>h2{
+    font-size: small;
+    color: #757575;
+}
+
+/* FORMULIR */
+.pindahPage>section{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    grid-template-rows: 25px 1fr 1fr 1fr;
+    justify-items: center;
+    padding: 8px 12px;
+}
+.labelFrom{
+    grid-column: 1/2;
+    font-size: large;
+    font-weight: bold;
+    color: #FFC5DD;
+}
+.labelTo{
+    grid-column: 3/4;
+    font-size: large;
+    font-weight: bold;
+    color: #B9D8FF;
+}
+.pindahPage>section>select{
+    height: 45px;
+    width: 100%;
+    border-radius: 12px;
+    display: flex;
+    text-align: center;
+}
+#pindahFrom{
+    border: 1.8px solid #FFC5DD;
+    background-color: #FFC5DD50;
+}
+#pindahTo{
+    border: 1.8px solid #B9D8FF;
+    background-color: #B9D8FF50;
+}
+.pindahPage>section>img{
+    aspect-ratio: 1/1;
+    width: 45px;
+}
+.pindahNomInput{
+    grid-column: 1/4;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    justify-self: start;
+    margin: 8px;
+}
+.pindahNomInput>label{
+    font-size: large;
+    font-weight: bold;
+}
+.pindahNomInput>input{
+    height: 30px;
+    width: 75%;
+    border: 1.8px solid #757575;
+    border-radius: 8px;
+}
+.pindahPage>section>button, .outPage>section>button, .inPage>section>button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    grid-column: 1/4;
+    width: 50%;
+    height: 35px;
+    justify-self: self-start;
+    margin-left: 12px;
+    font-weight: bold;
+    border-radius: 8px;
+    border: 1.5px solid #C7B9F5;
+    background-color: #C7B9F550;
+}
+.pindahPage>section>button>img, .outPage>section>button>img, .inPage>section>button>img, .addPage>section>button>img{
+    aspect-ratio: 1/1;
+    height: 55%;
+}
+
+/* ============================  OUT PAGE  ============================ */
+
+.outPage>section, .inPage>section{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    grid-template-rows: 25px 1fr 1fr 1fr;
+    justify-items: center;
+    padding: 8px 12px;   
+}
+.outPage>section>img, .inPage>section>img{
+    aspect-ratio: 1/1;
+    width: 45px;
+}
+.outFromLabel{
+    grid-column: 1/2;
+    font-size: large;
+    font-weight: bold;
+    color: #FFC5DD;
+}
+.outLabelLabel{
+    grid-column: 3/4;
+    font-size: large;
+    font-weight: bold;
+    color: #B9D8FF;
+}
+#outFrom{
+    border: 1.8px solid #FFC5DD;
+    background-color: #FFC5DD50;
+}
+#outLabel{
+    border: 1.8px solid #B9D8FF;
+    background-color: #B9D8FF50;
+}
+.outPage>section>select, .inPage>section>select{
+    height: 45px;
+    width: 100%;
+    border-radius: 12px;
+    text-align: center;
+}
+.outPage>section>div, .inPage>section>div{
+    grid-column: 1/4;
+    width: 100%;
+    justify-self: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5px;
+}
+.outPage>section>div>label, .inPage>section>div>label{
+    font-weight: bold;
+}
+.outPage>section>div>input, .inPage>section>div>input{
+    height: 30px;
+    width: 75%;
+    border: 1.8px solid #757575;
+    border-radius: 8px;
+}
+
+/* ============================  OUT PAGE  ============================ */
+.inToLabel{
+    grid-column: 3/4;
+    font-size: large;
+    font-weight: bold;
+    color: #E2F0D9;
+}
+.inLabelLabel{
+    grid-column: 1/2;
+    font-size: large;
+    font-weight: bold;
+    color: #B9D8FF;
+}
+#inLabel{
+    border: 1.8px solid #B9D8FF;
+    background-color: #B9D8FF50;
+}
+#inTo{
+    border: 1.8px solid #E2F0D9;
+    background-color: #E2F0D950;
+}
+
+/* ============================  ADD PAGE  ============================ */
+.addPage>section{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    justify-items: center;
+    padding: 8px 12px;
+    border: 1px solid;
+}
+.addPage>section>label{
+    font-size: large;
+    font-weight: bold;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+.addPage>section>input{
+    width: 95%;
+    height: 30px;
+    border-radius: 8px;
+    border: 1px solid #757575;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.addPage>section>button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    grid-column: 1/3;
+    width: 100%;
+    height: 35px;
+    justify-self: self-start;
+    margin-left: 12px;
+    font-weight: bold;
+    border-radius: 8px;
+    border: 1.5px solid #C7B9F5;
+    background-color: #C7B9F550;
+    margin: 5px 0;
+ }
