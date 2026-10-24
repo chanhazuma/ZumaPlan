@@ -1,5 +1,5 @@
 
-const CACHE_NAME = "zumaplan-v1";
+const CACHE_NAME = "zumaplan-v2";
 
 const APP_FILES = [
   "./",
